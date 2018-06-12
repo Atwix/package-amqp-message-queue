@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author Atwix Team
+ * @copyright Copyright (c) 2018 Atwix (https://www.atwix.com/)
+ * @package Atwix_Queue
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework-message-queue:etc/consumer.xsd">
+    <consumer name="AtwixProductDelete" queue="atwix_product_delete" connection="amqp" handler="Atwix\Queue\Model\Product\DeleteConsumer::processMessage"/>
+</config>

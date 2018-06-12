@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author Atwix Team
+ * @copyright Copyright (c) 2018 Atwix (https://www.atwix.com/)
+ * @package Atwix_Queue
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework-message-queue:etc/topology.xsd">
+    <exchange name="atwix.product" type="topic" connection="amqp">
+        <binding id="AtwixProductDelete" topic="atwix.product.delete" destinationType="queue" destination="atwix_product_delete"/>
+    </exchange>
+</config>
